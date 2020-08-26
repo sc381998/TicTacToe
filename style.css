@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: linear-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(161, 255, 206, 1) 0%,
+    rgba(250, 255, 209, 1) 90%
+  );
+  color: #545454;
+}
+small {
+  letter-spacing: 2px;
+}
+.container1 {
+  background: #14bdac;
+
+  margin: 50px;
+  padding: 50px;
+  border-radius: 25px;
+}
+.container0 {
+  background: #14bdac;
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 25px;
+
+  text-align: center;
+}
+.btn-sagar {
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 4px 5px rgba(252, 250, 250, 0.16);
+  border-radius: 5px;
+  text-align: left;
+}
+.container0 .btn-sagar {
+  color: #fff;
+  background: #0da192;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  margin: 0 auto;
+}
+.container0 .btn-sagar:hover {
+  background: #fff;
+  color: #0da192;
+}
+.container0 input {
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 4px 5px rgba(252, 250, 250, 0.16);
+  border-radius: 25px;
+  margin: 50px 0;
+  background: #14bdac;
+  color: #777;
+}
+.score {
+  margin-left: 80%;
+}
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.game-grid {
+  background-color: #0da192;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+.xWinner::before {
+  font-size: 150px;
+  content: "X";
+  display: flex;
+  justify-content: center;
+}
+.oWinner::before {
+  font-size: 150px;
+  content: "O";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.xoWinner::before {
+  font-size: 100px;
+  content: "XO";
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+}
+.cell {
+  width: 115px;
+  height: 115px;
+  background: #14bdac;
+  cursor: pointer;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+.restart {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+.restart:hover {
+  color: #777;
+}
+/*
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.hide {
+  display: none;
+}
+*/

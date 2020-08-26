@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container0" id="container0">
+      <h1 class="text-center">Tic <span class="text-white">Tac</span> Toe</h1>
+
+      <input
+        class="form-control"
+        placeholder="Enter player1 name"
+        type="text"
+        id="p1"
+        name="p1"
+        value=""
+      />
+      <input
+        class="form-control"
+        placeholder="Enter player1 name"
+        type="text"
+        id="p2"
+        name="p2"
+        value=""
+      />
+      <div class="text-center">
+        <button class="btn btn-sagar" onclick="startGame()">
+          Start Game
+        </button>
+      </div>
+    </div>
+    <div class="container1 hide" id="container1">
+      <h1 class="text-center">Tic <span class="text-white">Tac</span> Toe</h1>
+      <div class="row space-around">
+        <button class="btn btn-sagar col-4">
+          X<span class="score xScore">-</span>
+        </button>
+        <button class="btn btn-sagar col-4">
+          O<span class="score oScore">-</span>
+        </button>
+      </div>
+      <div class="text-center text-white mt-4">
+        <small id="turn">Start Game</small>
+      </div>
+      <div class="game-grid" id="game-grid">
+        <div id="00" class="cell" onclick="handleClick(this)"></div>
+        <div id="01" class="cell" onclick="handleClick(this)"></div>
+        <div id="02" class="cell" onclick="handleClick(this)"></div>
+        <div id="10" class="cell" onclick="handleClick(this)"></div>
+        <div id="11" class="cell" onclick="handleClick(this)"></div>
+        <div id="12" class="cell" onclick="handleClick(this)"></div>
+        <div id="20" class="cell" onclick="handleClick(this)"></div>
+        <div id="21" class="cell" onclick="handleClick(this)"></div>
+        <div id="22" class="cell" onclick="handleClick(this)"></div>
+      </div>
+
+      <div class="restart hide" id="restart" onclick="restartGame()">
+        Restart Game
+      </div>
+    </div>
+    <!--
+    <div class="container my-4 mx-4">
+      <div class="col-6 col-md-6 my-2">
+        <input class=form-control" type="text" id="p1" name="p1"
+        placeholder="Enter player1 name" /> <input class=form-control"
+        type="text" id="p2" name="p2" placeholder="Enter player2 name" />
+      </div>
+    </div>
+    <button class="btn btn-primary mx-4" onclick="startGame()">
+      Start Game
+    </button>
+    <div class="container mx-4 my-4" id="game-container">
+      <div class="row">
+        <div id="00" class="cell" onclick="handleClick(this)"></div>
+        <div id="01" class="cell" onclick="handleClick(this)"></div>
+        <div id="02" class="cell" onclick="handleClick(this)"></div>
+      </div>
+      <div class="row">
+        <div id="10" class="cell" onclick="handleClick(this)"></div>
+        <div id="11" class="cell" onclick="handleClick(this)"></div>
+        <div id="12" class="cell" onclick="handleClick(this)"></div>
+      </div>
+      <div class="row">
+        <div id="20" class="cell" onclick="handleClick(this)"></div>
+        <div id="21" class="cell" onclick="handleClick(this)"></div>
+        <div id="22" class="cell" onclick="handleClick(this)"></div>
+      </div>
+    </div>
+    -->
+  </body>
+  <script src="app.js"></script>
+</html>
